@@ -1,4 +1,4 @@
-# atividade1LP
+# LPO1
 
 **TAREFA 1 - 1° slide**
 
