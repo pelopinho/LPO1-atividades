@@ -384,6 +384,85 @@ public class Main {
 
     }
 }
+
+
+**13 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o primeiro valor:");
+        int valor1 = gato.nextInt();
+
+        System.out.println("Informe o segundo valor:");
+        int valor2 = gato.nextInt();
+
+        int menor, maior;
+        if (valor1 < valor2) {
+            menor = valor1;
+            maior = valor2;
+        } else {
+            menor = valor2;
+            maior = valor1;
+        }
+
+        System.out.println("Valores em ordem crescente: " + menor + ", " + maior);
+    }
+}
+
+
+**14 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Digite a hora de início do jogo (apenas horas inteiras):");
+        int horaInicio = gato.nextInt();
+
+        System.out.println("Digite a hora de fim do jogo (apenas horas inteiras):");
+        int horaFim = gato.nextInt();
+
+        int duracao;
+        if (horaInicio < horaFim) {
+            duracao = horaFim - horaInicio;
+        } else {
+            duracao = 24 - horaInicio + horaFim;
+        }
+
+        System.out.println("A duração do jogo é de " +duracao+ " horas.");
+
+    }
+}
+
+
+**15 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o n° de horas trabalhadas em um mês:");
+        int horasTrabalhadas = gato.nextInt();
+
+        System.out.println("Informe o salário por hora:");
+        double salarioPorHora = gato.nextDouble();
+
+        double salarioTotal;
+        if (horasTrabalhadas <= 40 * 4) {
+            salarioTotal = horasTrabalhadas * salarioPorHora;
+        } else {
+            int horasExtras = horasTrabalhadas - 40 * 4;
+            salarioTotal = (40 * 4 * salarioPorHora) + (horasExtras * salarioPorHora * 1.5);
+        }
+
+        System.out.println("O salário total do funcionário é de R$" + salarioTotal);
+    }
+}
         
         
         
