@@ -1,6 +1,6 @@
 # atividade1LP
 
-**ATIVIDADE 1 LP - 1° slide**
+**TAREFA 1 - 1° slide**
 
 **1 -** 
         public class Main {
@@ -21,7 +21,7 @@
         System.out.println("A primeira mensagem está sendo impressa\nA segunda mensagem também está sendo impressa");
 
 
-**ATIVIDADE 1 LP - 2° slide**
+**TAREFA 1 - 2° slide**
 
 **1 -**
 
@@ -75,7 +75,315 @@ public class Main {
 
 
     }
+
+
 }
 
+
+**TAREFA 2 - teams**
+
+**1 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe a sua idade (anos): ");
+        int anos = gato.nextInt();
+
+        System.out.println("Informe a sua idade (meses): ");
+        int meses = gato.nextInt();
+
+        System.out.println("Informe a sua idade (dias): ");
+        int dias = gato.nextInt();
+
+        int anosTotal = anos * 365;
+        int mesesTotal = meses * 30;
+
+        int idadeTotal = (anosTotal+mesesTotal+dias);
+
+        System.out.println("O usuário possui "+idadeTotal+" dias de vida");
+
+
+
+ **2 -**
+
+        import java.util.Scanner;
+        public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Quantos eleitores há no município da FATEC?");
+        int eleitor = gato.nextInt();
+
+        System.out.println("Quantos votos brancos?");
+        int vtBranco = gato.nextInt();
+
+        System.out.println("Quantos votos nulos?");
+        int vtNulo = gato.nextInt();
+
+        System.out.println("Quantos votos válidos?");
+        int vtValido = gato.nextInt();
+
+    double percentBranco = vtBranco * 100 / eleitor;
+    double percentNulo = vtNulo * 100 / eleitor;
+    double percentValido = vtValido * 100 / eleitor;
+
+    int somaVoto = vtBranco + vtNulo + vtValido;
+
+    if (somaVoto > eleitor) {
+        System.out.println("Contagem incorreta!");
+    } else {
+
+        System.out.println("LEVANTAMENTO\nVotos brancos: " + percentBranco + "%\nVotos nulos: " + percentNulo + "%\nVotos válidos: " + percentValido + "%");
+
+
+    }
+
+    }
+}
+
+**3 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o salário: ");
+        double salario = gato.nextDouble();
+
+        System.out.println("Informe a porcentagem de reajuste: ");
+        double reajuste = gato.nextDouble();
+
+        double salarioReajustado = salario + (salario*(reajuste*0.01));
+
+        System.out.println("Salário reajustado: "+salarioReajustado);
+
+
+    }
+
+    }
+
+
+**4 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o custo de fábrica do carro (R$): ");
+        double carroFabrica = gato.nextDouble();
+
+        double custoTotal = carroFabrica + (carroFabrica*0.28) + (carroFabrica*0.45);
+
+        System.out.println("O custo total é de: "+custoTotal);
+
+
+
+    }
+
+    }
+
+
+**5 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o número de carros foram vendidos?");
+        int carros = gato.nextInt();
+
+        System.out.println("Informe o valor total das vendas? (R$)");
+        double totalVendas = gato.nextDouble();
+
+        System.out.println("Informe o salário fixo (R$): ");
+        double salarioFixo = gato.nextDouble();
+
+        System.out.println("Informe o valor de cada carro vendido: (R$)");
+        double valorVendaCarros = gato.nextDouble();
+
+        System.out.println("Informe o valor fixo de comissão por carro: ");
+        int comissao = gato.nextInt();
+
+       double finalVendas = totalVendas * 0.05;
+       double finalCarros = carros * comissao;
+
+       double salarioFinal = finalVendas + finalCarros + salarioFixo;
+
+        System.out.println("Salário total: R$ "+salarioFinal);
+        
+
+    }
+
+    }
+
+
+**6 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe a temperatura em Fahrenheit (°F): ");
+        double tempFahrenheit = gato.nextDouble();
+
+        double celsius = (tempFahrenheit - 32) / 1.8;
+
+        System.out.println("A temperatura em celsius é: "+celsius+ "°C");
+
+    }
+
+    }
+
+
+**7 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe um número: ");
+        int num = gato.nextInt();
+
+        if (num > 10) {
+            System.out.println("É MAIOR QUE 10!");
+
+        } else if (num == 10) {
+            System.out.println("O NÚMERO É IGUAL A 10!");
+
+        } else {
+            System.out.println("NÃO É MAIOR QUE 10!");
+
+        }
+
+    }
+
+    }
+
+
+**8 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe um número: ");
+        int num = gato.nextInt();
+
+        if (num >= 0) {
+            System.out.println("Positivo!");
+        } else if (num < 0) {
+            System.out.println("Negativo!");
+        }
+
+    }
+
+    }
+
+
+**9 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe a quantidade de maçãs a serem compradas:");
+        int maca = gato.nextInt();
+
+        if (maca < 12) {
+            double valor = maca * 1.3;
+            System.out.println("O valor total é de R$ "+valor);
+
+        } else if (maca >= 12) {
+            double valor = maca * 1;
+            System.out.println("O valor total é de R$ "+valor);
+        }
+
+    }
+}
+
+
+**10 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe a 1ª nota:");
+        double nota1 = gato.nextDouble();
+
+        System.out.println("Informe a 2ª nota:");
+        double nota2 = gato.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        System.out.println("Média = " + media);
+
+        if (media >= 6) {
+            System.out.println("Aprovado!");
+        } else if (media < 6) {
+            System.out.println("Reprovado!");
+        }
+    }
+}
+
+
+**11 -**
+
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe o ano atual:");
+        int ano = gato.nextInt();
+
+        System.out.println("Informe o ano de nascimento:");
+        int anoNascimento = gato.nextInt();
+
+        int anoVoto = ano - anoNascimento;
+
+        System.out.println("Você tem "+anoVoto+" anos");
+
+        if (anoVoto >= 16) {
+            System.out.println("Você poderá votar este ano!");
+
+        } else {
+            System.out.println("Você não poderá votar este ano!");
+        }
+
+    }
+}
+
+**12 -**
+        
+        import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner gato = new Scanner(System.in);
+
+        System.out.println("Informe um valor: ");
+        int num1 = gato.nextInt();
+
+        System.out.println("Informe outro valor (diferente do primeiro informado):");
+        int num2 = gato.nextInt();
+
+        double maior = Math.max(num1,num2);
+
+        System.out.println("O maior número é: "+maior);
+
+    }
+}
+        
         
         
